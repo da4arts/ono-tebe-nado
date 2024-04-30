@@ -1,1 +1,118 @@
 /* место для вашего кода */
+
+
+.body{
+    background-color: aquamarine;
+    font-family: Raleway;
+}
+
+.header_container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin: 100px 0px;
+    font-size: 16;
+    font-weight: 400;
+}
+
+.menu_list{
+    display: flex;
+    list-style: circle outside; 
+    justify-content: space-between;
+    align-content: center;
+    width: 410px;
+}
+
+.menu_list-item {
+    padding-left: 40px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu_list-item_blank {
+    list-style: none;
+}
+
+.menu_li_span{
+    position: relative;
+    left: -30px;
+}
+
+.header_logo{
+    width: 100%;
+    position: relative;
+    left: -80px;
+}
+
+
+.info_contacts{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-content: flex-start;
+    justify-self: flex-end;
+    width: 400px;
+}
+
+/*------------------------------------------------------------*/
+.section_painting{
+    min-height: 750px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    
+}
+
+.painting_text_container{
+    display:block;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 240px;
+}
+.painting_text{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 30%;
+    color: white;
+    line-height: 1;
+}
+
+.text_left{
+    text-align: left;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.text_right{
+    text-align: right;
+}
+
+.add_space{
+    letter-spacing: 60%;
+}
+
+.painting_phrase_container{
+    display:block;
+    padding-left: 80px;
+    padding-bottom: 60px;
+}
+
+.painting_phrase{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px; 
+    text-transform: uppercase;
+    color: white;
+}
+
+.add_space_2{
+    letter-spacing: 90%;
+}
