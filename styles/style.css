@@ -12,7 +12,7 @@
     width: 100%;
     align-items: center;
     margin: 100px 0px;
-    font-size: 16;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -55,7 +55,7 @@
     width: 400px;
 }
 
-/*------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 .section_painting{
     min-height: 750px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cover.jpg");
@@ -99,7 +99,8 @@
 }
 
 .painting_phrase_container{
-    display:block;
+    display:flexbox;
+    align-content: center;
     padding-left: 80px;
     padding-bottom: 60px;
 }
@@ -115,4 +116,145 @@
 
 .add_space_2{
     letter-spacing: 90%;
+}
+
+.button_bid{
+    display: inline;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px; 
+    text-transform: uppercase;
+    background-color: transparent;
+    color:white;
+    padding: 10px 30px;  
+}
+
+/*------------------------------------------------------------------------*/
+.section_lots{
+    margin-top: 180px;
+    margin-left: 25px;
+}
+
+.lots_header{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px; 
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.lots_table{
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   width: 100%;
+   margin: 30px 0px;
+}
+
+.lots_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 560px;
+    flex-basis: 335px;
+    
+    padding: 50px 40px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lots_container_1{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-01.jpg");
+}
+
+.lots_container_2{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-02.jpg");
+}
+
+.lots_container_3{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-03.jpg");
+}
+
+.lots_text_name{
+    display:block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px; 
+    text-transform: uppercase;
+    color:white;
+}
+
+.lots_description{
+    display:block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color:white; 
+}
+
+.lots_footer{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px; 
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+/*------------------------------------------------------------------------*/
+.auction_info_logo_container{
+    display: flexbox;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 150px;
+}
+
+.auction_info_logo{
+    width: 136px;
+    height: 102px;
+}
+
+/*------------------------------------------------------------------------*/
+
+.footer_container{
+    display:flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin:180px 50px 90px 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_address_container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.footer_logo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-start;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_logo{
+    width: 48px;
+    height: 48px;
 }
