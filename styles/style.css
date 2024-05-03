@@ -1,5 +1,5 @@
-/* место для вашего кода */
-
+/* body + header */
+/* #region */
 
 .body{
     background-color: aquamarine;
@@ -54,8 +54,10 @@
     justify-self: flex-end;
     width: 400px;
 }
-
+/* #endregion */
 /*------------------------------------------------------------------------*/
+/*paintings*/
+/* #region */
 .section_painting{
     min-height: 750px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cover.jpg");
@@ -77,9 +79,17 @@
     font-weight: 700;
     line-height: 100px;
     text-transform: uppercase;
-    letter-spacing: 30%;
+    letter-spacing: 0.3em;
     color: white;
     line-height: 1;
+}
+
+.add_space_1{
+    letter-spacing: 0.6em;
+}
+
+.add_space_2{
+    letter-spacing: normal;
 }
 
 .text_left{
@@ -94,14 +104,13 @@
     text-align: right;
 }
 
-.add_space{
-    letter-spacing: 60%;
-}
 
 .painting_phrase_container{
-    display:flexbox;
+    display: flex;
+    justify-content: space-between;
     align-content: center;
     padding-left: 80px;
+    padding-right: 50px;
     padding-bottom: 60px;
 }
 
@@ -114,22 +123,35 @@
     color: white;
 }
 
-.add_space_2{
-    letter-spacing: 90%;
+.phrase_whitespace{
+    letter-spacing: 0.9em;
 }
 
-.button_bid{
-    display: inline;
+.phrase_whitespace_2{
+    letter-spacing: 0.8em;
+}
+
+.phrase_solo-letter{
+    letter-spacing: 1.1em;
+}
+
+.button_bid_text{
+    position: relative;
+    top: -9px;
     font-size: 22px;
     font-weight: 500;
     line-height: 26px; 
     text-transform: uppercase;
     background-color: transparent;
     color:white;
-    padding: 10px 30px;  
+    white-space: nowrap;
+    padding: 10px 30px; 
+    border-width: 1px; 
 }
-
+/* #endregion */
 /*------------------------------------------------------------------------*/
+/*lots*/
+/* #region */
 .section_lots{
     margin-top: 180px;
     margin-left: 25px;
@@ -201,30 +223,66 @@
     padding-left: 40px;
     padding-top: 30px;
 }
-
+/* #endregion */
 /*------------------------------------------------------------------------*/
+/*auction_info*/
+/* #region */
+.section_auction_info{
+    
+    margin-top: 150px;
+ 
+}
+
 .auction_info_logo_container{
-    display: flexbox;
+    display:inline-flex;
     background-color: black;
     width: 240px;
-    height: 240px;
+    height: 240px;    
+    border-radius: 50%;  
+    margin-left: 71px; 
     justify-content: center;
-    align-content: center;
-    margin-top: 150px;
+    align-content: center   ;
 }
 
 .auction_info_logo{
-    width: 136px;
-    height: 102px;
+    width: 140px;
+    height: 112px;
 }
 
-/*------------------------------------------------------------------------*/
+.auction_info_text_header{
+    display: inline;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px; 
+    text-transform: uppercase;
+    margin-left: 68px;
+}
 
+.auction_info_text_container{
+    display: block;
+}
+
+.auction_info_text{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px; 
+    margin-left: 383px;
+    margin-top: 8px;
+}   
+/* #endregion */
+/*------------------------------------------------------------------------*/
+/*footer*/
+/* #region */
 .footer_container{
     display:flex;
     align-content: flex-start;
     justify-content: space-between;
-    margin:180px 50px 90px 50px;
+    margin-top: 180px;
+    margin-bottom: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 100%;
     font-size: 18px;
     font-weight: 400;
@@ -250,11 +308,10 @@
     justify-content: flex-end;
     align-content: flex-start;
     gap: 50px;
-    padding: 0;
-    margin: 0;
 }
 
 .footer_logo{
     width: 48px;
     height: 48px;
 }
+/* #endregion */
