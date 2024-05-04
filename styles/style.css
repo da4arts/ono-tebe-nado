@@ -2,16 +2,15 @@
 /* #region */
 
 .body{
-    background-color: aquamarine;
     font-family: Raleway;
 }
 
 .header_container{
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    margin: 100px 0px;
+    width: 100%;
+    padding: 95px 50px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -19,67 +18,69 @@
 .menu_list{
     display: flex;
     list-style: circle outside; 
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
-    width: 410px;
+    gap: 32px;
 }
 
 .menu_list-item {
-    padding-left: 40px;
     font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 21.13px;
     text-decoration: none;
     white-space: nowrap;
 }
 
 .menu_list-item_blank {
     list-style: none;
+    
 }
 
-.menu_li_span{
-    position: relative;
-    left: -30px;
+.logo_container{
+    display: flex;
+    position:relative;
+    right: 80px;
 }
-
-.header_logo{
-    justify-self: center;
-    margin: auto;
-}
-
 
 .header_address_container{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 100px;
+    line-height: 24.3px;
+    padding-right: 45px;
+}
+
+.header_address_container > .style1{
+    letter-spacing: 0.01em;
 }
 /* #endregion */
 /*------------------------------------------------------------------------*/
 /*paintings*/
 /* #region */
 .section_painting{
-    min-height: 750px;
+    box-sizing: border-box;
+    height: 755px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
-    
+    background-size: cover;
 }
 
 .painting_text_container{
     display:block;
-    padding-top: 165px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 240px;
+    padding: 170px 50px 0 50px;
+    width: 100%;
+
 }
+
 .painting_text{
+
     font-size: 100px;
     font-weight: 700;
     line-height: 100px;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: white;
-    line-height: 1;
+    line-height: 1;    
 }
 
 .add_space_1{
@@ -92,10 +93,12 @@
 
 .text_left{
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .text_center{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .text_right{
@@ -107,9 +110,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-left: 80px;
-    padding-right: 50px;
-    padding-bottom: 60px;
+    padding:135px 50px 0px 79px;
 }
 
 .painting_phrase{
@@ -141,8 +142,9 @@
     background-color: transparent;
     color:white;
     white-space: nowrap;
-    padding: 10px 30px; 
+    padding: 12px 32px; 
     border-width: 1px; 
+    border-color: white;
 }
 /* #endregion */
 /*------------------------------------------------------------------------*/
@@ -167,6 +169,7 @@
    align-content: center;
    width: 100%;
    margin: 30px 0px;
+   padding-right: 23px;
 }
 
 .lots_card{
@@ -225,7 +228,7 @@
 /* #region */
 .section_auction_info{
 
-    margin: 150px 26px 0px 71px;
+    margin: 180px 26px 0px 71px;
  
 }
 
@@ -242,8 +245,8 @@
 }
 
 .auction_info_logo{
-    width: 140px;
-    height: 112px;
+    width: 148px;
+    height: 120px;
 }
 
 .auction_info_article{
@@ -307,13 +310,11 @@
 /* #region */
 .footer_container{
     display:flex;
+    box-sizing:border-box;
     align-content: flex-start;
+    align-items:flex-start;
     justify-content: space-between;
-    margin-top: 180px;
-    margin-bottom: 90px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 100%;
+    margin: 180px 50px 88px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -323,6 +324,12 @@
     flex-direction: column;
     width: 200px;
     height: 100px;
+    line-height: 24.3px;
+
+}
+
+.footer_address_container > .style1{
+    letter-spacing: 0.1em;
 }
 
 .footer_menu{
@@ -330,6 +337,12 @@
     flex-direction: column;
     list-style: none;
     text-align: center;
+    justify-self:center;
+    justify-content: flex-start;
+    gap: 0;
+
+    position: relative;
+    left: 19px;
 }
 
 .footer_logo_container{
@@ -337,7 +350,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-content: flex-start;
-    gap: 50px;
+    gap: 48px;
 }
 
 .footer_logo{
