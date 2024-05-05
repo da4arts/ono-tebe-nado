@@ -17,7 +17,7 @@
 
 .menu_list {
     display: flex;
-    list-style: circle outside; 
+    list-style-type: circle; 
     justify-content: flex-start;
     align-content: center;
     gap: 32px;
@@ -73,7 +73,6 @@
 }
 
 .painting_text {
-
     font-size: 100px;
     font-weight: 700;
     line-height: 115px;
@@ -100,7 +99,7 @@
     margin-bottom: 5px;
 }
 
-.text_right{
+.text_right {
     text-align: right;
 }
 
