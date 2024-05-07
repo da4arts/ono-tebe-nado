@@ -1,357 +1,367 @@
 /* body + header */
 /* #region */
 
-.body {
-    font-family: Raleway;
-}
-
-.header_container {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 95px 50px;
+    margin: 95px 24px;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
-.menu_list {
+.header__list {
     display: flex;
-    list-style-type: circle; 
+    list-style-type: circle;
     justify-content: flex-start;
     align-content: center;
     gap: 32px;
+
+    margin-left: 25px;
 }
 
-.menu_list-item {
-    font-weight: 400;
-    letter-spacing: 0.01em;
+
+.header__list-item {
     line-height: 21.13px;
     text-decoration: none;
     white-space: nowrap;
 }
 
-.menu_list-item_blank {
+.header__list-item_no-bullit {
     list-style: none;
-    
 }
 
-.logo_container {
+/*заменил header_logo на header__image*/
+.header__image {
     display: flex;
-    position:relative;
-    right: 80px;
 }
 
-.header_address_container {
+.address {
     display: flex;
     flex-direction: column;
     line-height: 24.3px;
-    padding-right: 45px;
+    width: 225px;
 }
 
-.header_address_container > .style1 {
-    letter-spacing: 0.01em;
+.header__address {
+    margin-right: 90px;
+}
+
+.address__text_style {
+    letter-spacing: normal;
 }
 /* #endregion */
 /*------------------------------------------------------------------------*/
-/*paintings*/
+/*"COVER"*/
 /* #region */
-.section_painting {
-    box-sizing: border-box;
-    height: 755px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cover.jpg");
+.cover {
+    position: relative;
+    margin-top: 165px;
+    padding: 165px 50px 51px;
+
+    background-image: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
 }
 
-.painting_text_container {
-    display:block;
-    padding: 165px 50px 0 50px;
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color : rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.heading {
+    position: relative;
+
     width: 100%;
 
-}
-
-.painting_text {
     font-size: 100px;
     font-weight: 700;
     line-height: 115px;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color: white;   
+    color: rgb(255, 255, 255);
+    z-index: 1;
+
+    margin-bottom: 135px;
 }
 
-.add_space_1 {
-    letter-spacing: 0.6em;
-}
-
-.add_space_2 {
-    letter-spacing: normal;
-}
-
-.text_left {
+.heading__aligned-left {
+    display:block;
     text-align: left;
-    margin-bottom: 12px;
 }
 
-.text_center {
+.heading__aligned-center {
+    display:block;
     text-align: center;
-    margin-bottom: 5px;
 }
 
-.text_right {
+.heading__aligned-right {
+    display:block;
     text-align: right;
 }
 
+.heading__style_narrow {
+    letter-spacing: 0.6em;
+}
 
-.painting_phrase_container {
+.heading__style_normal {
+    letter-spacing: normal;
+}
+
+.cover__description {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding:127px 50px 0px 79px;
+    /*padding: 127px 50px 0px 79px;*/
+    z-index: 1;
 }
 
-.painting_phrase {
+.description__text {
     width: 100%;
     font-size: 22px;
     font-weight: 400;
-    line-height: 28px; 
+    line-height: 28px;
     text-transform: uppercase;
     color: white;
 }
 
-.phrase_whitespace {
+.description__style_wide {
     letter-spacing: 0.9em;
 }
 
-.phrase_whitespace_2 {
+.description__style_narrow {
     letter-spacing: 0.8em;
 }
 
-.phrase_solo-letter {
+.description__style_extra-wide {
     letter-spacing: 1.1em;
 }
 
-.button_bid_text {
+.bid-button {
     font-size: 22px;
     font-weight: 500;
-    line-height: 26px; 
+    line-height: 26px;
     text-transform: uppercase;
     background-color: transparent;
-    color:white;
+    color: white;
     white-space: nowrap;
-    padding: 12px 32px; 
-    border-width: 1px; 
+    padding: 12px 32px;
+    border-width: 1px;
     border-color: white;
 }
+
 /* #endregion */
 /*------------------------------------------------------------------------*/
-/*lots*/
+/*"LOTS"*/
 /* #region */
-.section_lots {
-    margin-top: 180px;
-    margin-left: 25px;
+.lots {
+    margin: 180px 24px 0px;
 }
 
-.lots_header {
+.lots__heading {
+    margin-left: 40px;
+
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px; 
+    line-height: 47px;
     text-transform: uppercase;
-    padding-left: 40px;
 }
 
-.lots_table {
-   display: flex;
-   justify-content: space-between;
-   align-content: center;
-   width: 100%;
-   margin: 30px 0px;
-   padding-right: 23px;
-}
-
-.lots_card {
+.lots__card-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 560px;
-    flex-basis: 335px;
-    
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 25px;
+    margin-top: 27px;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.lots__card {
+    position: relative;
     padding: 50px 40px;
+
+    max-width: 334px;
+    min-height: 563px;
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    flex-grow: 1;
 }
 
-.lots_container_1 {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-01.jpg");
+.card__type_film {
+    background-image: url("../images/card-lot-01.jpg");
 }
 
-.lots_container_2 {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-02.jpg");
+.card__type_book {
+    background-image: url("../images/card-lot-02.jpg");
 }
 
-.lots_container_3 {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/card-lot-03.jpg");
+.card__type_picture {
+    background-image: url("../images/card-lot-03.jpg");
 }
 
-.lots_text_name {
-    display:block;
+.card__link{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__title {
+    position: relative;
+    z-index: 1;
+
     font-size: 22px;
     font-weight: 700;
-    line-height: 26px; 
+    line-height: 26px;
     text-transform: uppercase;
-    color:white;
+    color: white;
+    text-decoration: underline;
+    
 }
 
-.lots_description {
-    display:block;
+.card__text {
+    position: relative;
+    z-index: 1;
+
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    color:white; 
+    color: white;
+   
 }
 
-.lots_footer {
+.lots__excerpt {
+    display: block;
     font-size: 20px;
     font-weight: 400;
-    line-height: 23px; 
-    padding-left: 40px;
-    padding-top: 30px;
+    line-height: 23px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
+
 /* #endregion */
 /*------------------------------------------------------------------------*/
-/*auction_info*/
+/* "ABOUT" */
 /* #region */
-.section_auction_info {
 
-    margin: 180px 26px 0px 71px;
- 
+.about {
+    margin: 183px 26px 0px 71px;
 }
 
-.auction_info_logo_container {
-    float:left;
+.about__aside {
+    float: left;
     display: grid;
     justify-items: center;
     align-items: center;
     background-color: black;
     width: 240px;
-    height: 240px;    
-    border-radius: 50%;  
-
+    height: 240px;
+    border-radius: 50%;
 }
 
-.auction_info_logo {
+.about__aside > .aside__img {
     width: 148px;
     height: 120px;
 }
 
-.auction_info_article {
-   display: flex;
-   flex-direction: column;
-   align-content: first baseline;
-   padding-top: 101px;
-   padding-left: 72px;
-
-   font-size: 20px;
-   font-weight: 400;
-   line-height: 24px; 
+.about__article {
+    display: flex;
+    flex-direction: column;
+    align-content: first baseline;
+    padding-top: 101px;
+    padding-left: 72px;
 }
 
-.auction_info_article > .article_header {
+.about__heading {
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px; 
+    line-height: 47px;
     text-transform: uppercase;
     white-space: nowrap;
-}  
+}
 
-.auction_info_article > .ph1 {
-    margin-top: 100px;
-    letter-spacing: 0.01em;
+.about__text {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     text-align: left;
-}  
+}
 
-.auction_info_article > .ph1 > .style1 {
+.about > text__style_normal {
     letter-spacing: normal;
 }
 
-.auction_info_article > .ph1 > .style2 {
-    letter-spacing: 0.02em;
-}
-
-.auction_info_article > .ph1 > .style3 {
-    letter-spacing: -0.01em;
-}
-
-.auction_info_article > .ph1 > .style4 {
-    letter-spacing: 0.03em;
-}
-
-.auction_info_article> .ph2 {
-    margin-top: 24px;
-    letter-spacing: normal;
-}   
-
-.auction_info_article > .ph2 > .style1 {
+.about > text__style_wider {
     letter-spacing: 0.04em;
 }
 
-.auction_info_article > .ph2 > .style2 {
+.about > .text__style_wide{
+    letter-spacing: 0.03em;
+}
+.about > text__style_narrow {
+    letter-spacing: 0.02em;
+}
+.about > text_style_narrower{
     letter-spacing: 0.01em;
 }
 
+.about > text_style_ultra-narrow {
+    letter-spacing: -0.01em;
+}
 /* #endregion */
 /*------------------------------------------------------------------------*/
 /*footer*/
 /* #region */
-.footer_container {
-    display:flex;
-    box-sizing:border-box;
+.footer {
+    display: flex;
+    box-sizing: border-box;
     align-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 180px 50px 89px;
     font-size: 18px;
     font-weight: 400;
 }
 
-.footer_address_container {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 100px;
-    line-height: 24.3px;
-
-}
-
-.footer_address_container > .style1 {
-    letter-spacing: 0.1em;
-}
-
-.footer_menu {
+.footer__list_menu {
     display: flex;
     flex-direction: column;
     list-style: none;
     text-align: center;
-    justify-self:center;
+    justify-self: center;
     justify-content: flex-start;
     gap: 0;
 
     position: relative;
     left: 19px;
+
+    list-style: none;
 }
 
-.footer_logo_container {
+.footer__list_social {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-content: flex-start;
     gap: 48px;
+
+    list-style: none;
 }
 
-.footer_logo {
+.social__img {
     width: 48px;
     height: 48px;
 }
