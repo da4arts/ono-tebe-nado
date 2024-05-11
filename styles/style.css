@@ -15,7 +15,7 @@
 
 }
 
-.header__menu{
+.header__menu {
     grid-column: 1/3;
     grid-row: 1/2;  
     margin-left: 45px;
@@ -45,7 +45,7 @@
     text-decoration: none;
 }
 
-.menu__link_disabled{
+.menu__link_disabled {
     text-decoration: none;
 }
 
@@ -94,7 +94,7 @@
     z-index: 0;
 }
 
-.cover .heading {
+.heading {
     position: relative;
     width: 100%;
     z-index: 1;
@@ -105,6 +105,7 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: rgb(255, 255, 255);
+    
 }
 
 .heading__style-left {
@@ -184,7 +185,7 @@
     text-transform: uppercase;
 }
 
-.lots .card-list {
+.card-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -196,7 +197,7 @@
     list-style: none;
 }
 
-.lots .card {
+.card {
     position: relative;
     padding: 50px 40px;
 
@@ -218,11 +219,11 @@
     background-image: url("../images/card-lot-02.jpg");
 }
 
-.card_picture {
+.card_painting {
     background-image: url("../images/card-lot-03.jpg");
 }
 
-.card__link{
+.card__link {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -286,7 +287,7 @@
     height: 120px;
 }
 
-.about .article {
+.article {
     display: flex;
     flex-direction: column;
     align-content: first baseline;
@@ -294,7 +295,7 @@
     padding-left: 72px;
 }
 
-.about .article__heading {
+.article__heading {
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
@@ -302,7 +303,7 @@
     margin-bottom: 100px;
 }
 
-.about .article__text {
+.article__text {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -311,33 +312,8 @@
     letter-spacing: normal;
 }
 
-.about .article__text_narrower {
+.article__text_narrower {
     letter-spacing: 0.01em;
-}
-
-
-.about .article__style-dense {
-    letter-spacing: -0.01em;
-}
-
-.about .article__style-narrower {
-    letter-spacing: 0.01em;
-}
-
-.about .article__style-narrow {
-    letter-spacing: 0.02em;
-}
-
-.about .article__style-initial {
-    letter-spacing: initial;
-}
-
-.about .article__style-wide{
-    letter-spacing: 0.03em;
-}
-
-.about .article__style-wider {
-    letter-spacing: 0.04em;
 }
 
 
